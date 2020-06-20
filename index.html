@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Noel Elias</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="js/aos.js"></script>
+		<link href="css/aos.css" rel="stylesheet" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+	</head>
+<script>
+	$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.fadein').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},1500);
+
+            }
+
+        }); 
+
+    });
+
+});
+
+$("#banner").waypoint(function(){
+    $(this).fadeIn(750);
+},{
+    offset: 'bottom-in-view'
+});
+
+</script>
+
+	<style>
+		 body{ 
+		  background-image: url("https://github.com/nobodiz123/personal-website/blob/master/background.png?raw=true");
+		  background-size: cover;
+		 }
+
+	
+
+.fadein
+{
+    opacity:0;
+}
+
+		 		 
+	</style>
+	
+
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="bgimg-1 page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Home</a></h1>
+
+						<nav>
+							
+							<a href="#menu">Menu</a> 
+
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="#footer">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-gem"></span></div>
+							<h2>Noel Elias</h2>
+							<p>High School Student + Encryption Enthusiast + Machine Learning Practitioner</p>
+
+						</div>
+						
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div id = "first" class="inner fadein" >
+									<a class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/code-sign.png?raw=true" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Experienced Programmer</h2>
+										<p >Programming for 4 years. Created products with Python, SQL, Java, C++, HTML/CSS, C#, JavaScript, and MATLAB. Used Git, Unity, TensorFlow, Arduino, Android Studio, and Adobe Creative Suite. Developed multiple software applications.</p>
+									
+									</div>
+								</div>
+								
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div id = "second" class="inner" data-aos="fade" data-aos-duration="2000">
+									<a class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/microscope.png?raw=true" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Avid Researcher</h2>
+										<p>Researched for 3 years. Worked to implement computer science in molecular biology research at <a href="https://ellingtonlab.org/">UT Austin labs</a>. Presented and published findings at 2 conferences: <a href="https://igem.org/Main_Page">iGEM '18</a> and <a href="https://txsef.tamu.edu/">ISEF '20 science fairs.</a>  </p>
+									</div>
+								</div>
+								<script type="text/javascript">
+									$(document).ready(function () {
+										AOS.init();
+										AOS.refreshHard();  //optional
+									});
+								</script>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div id = "third" class="inner" data-aos="fade" data-aos-duration="2000">
+									<a  class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/lightbulb.png?raw=true" alt="" /></a>
+									<div class="content">
+										<h2 class="major">STEM Volunteer</h2>
+										<p>Volunteered over 500+ hours. Developed augemented reality app that taught kids basics of programming. Taught multiple sessions at <a href="https://thinkeryaustin.org/">The Thinkery Children's Museum </a> & local schools - engaging over 50 kids daily. Served as STEM curriculum ambassador.</p>
+									</div>
+								</div>
+								<script type="text/javascript">
+									$(document).ready(function () {
+										AOS.init();
+										AOS.refreshHard();  //optional
+									});
+								</script>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major"><a href="projects.html">Projects</a></h2>
+									<p>Here are some of my best projects. Check them out!</p>
+									<section class="features">
+										<article>
+											<a href="https://www.youtube.com/watch?v=aqKqN5uav3I" class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/codex.png?raw=true" alt="" /></a>
+											<h3 class="major">Codex</h3>
+											<p>Coded, branded, marketed an augmented reality based app to teach young kids coding. Lauched permanently at multiple facilities with over <b>100 new daily users.</b></p>
+											<a href="https://www.youtube.com/watch?v=aqKqN5uav3I" class="special">Learn more</a>
+										</article>
+	
+										<article>
+											<a href="https://3smedia.net/rackforms/output/forms/sfawdsecplcsch/absdetails.php?awd_ProjectIDSQL=129103" class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/research.png?raw=true" alt="" /></a>
+											<h3 class="major">"Fecal Contamination Assay"</h3>
+											<p>Led, publicized, engineered research  project for HF-183 contamination detection. Incorporated MATLAB scripts, math models, and LAMP analysis. <b>Beat EPA standard. </b> <a href="https://txsef.tamu.edu/"> TXSEF '20 </a> <b> Finalist </b>and <a href="http://www.sciencefest.org/"> Austin Energy Fair </a>- <b>1st</b></p>
+											<a href="https://3smedia.net/rackforms/output/forms/sfawdsecplcsch/absdetails.php?awd_ProjectIDSQL=129103" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/igem.png?raw=true" alt="" /></a>
+											<h3 class="major">"HIV Detection in Infants"</h3>
+											<p>Conducted research to develop assay to detect HIV in infants using CRISPR and LAMP amplification model analysis. Programmed team website. Presented at iGEM '18 Conference - <b>Bronze.</b>
+											</p>
+											<a href="http://2018.igem.org/Team:Austin_LASA" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="https://www.kaggle.com/noele123" class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/kaggle.png?raw=true" alt="" /></a>
+											<h3 class="major">Kaggle</h3>
+											<p> Machine learning and data science practitioner. Create predictive models using Python, SQL, Deep Learning, TensorFlow. Placed <b>50 out of 30,000</b> globally.</p>
+											<a href="https://www.kaggle.com/noele123" class="special">Learn more</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="projects.html" class="button">Browse All</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Contact</h2>
+							<p>
+							Please contact me for collaborations or interships!</p>
+					
+						
+							<ul class="contact">
+								
+								<li class="icon solid fa-envelope"><a href="mailto:nobodiz123@gmail.com">nobodiz123@gmail.com</a></li>
+								<li class="icon brands fa-linkedin" ><a href="https://linkedin.com/in/noel-elias"> linkedin.com/in/noel-elias</a></li>
+								<li class="icon brands fa-github"><a href="https://github.com/nobodiz123"> github.com/nobodiz123</a></li>
+								
+						
+								</li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Noel Elias 2020. All rights reserved.</li>
+							</ul>	
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
