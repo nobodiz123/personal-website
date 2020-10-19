@@ -1,242 +1,113 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html lang="en">
 
-<html>
-	<head>
-		<title>Noel Elias</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="https://unpkg.com/scrollreveal"></script>
-		<script src="js/aos.js"></script>
-		<link href="css/aos.css" rel="stylesheet" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
-	</head>
-<script>
-	$(function(){  // $(document).ready shorthand
-  $('.monster').fadeIn('slow');
-});
+  <head>
+  <!-- Bootstrap core CSS -->
+    <title>Noel Elias</title>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>    
+    <link href="starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-$(document).ready(function() {
 
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
+<body>
+<main role="main" class="container">
 
-        /* Check the location of each desired element */
-        $('.fadein').each( function(i){
+  <div class="starter-template ">
+    <h1 class="header1"> Noel Elias</h1>
+    <h3 class = "header3">High School Student -- Multidisciplinary Researcher -- Machine Learning Practitioner</h3>
+  </div>
+  <div class=row>
+    <div class= "introColumns myInfo"> 
+  <div class = "bodyText">
+    <p> Hey, I'm Noel, a senior at <a href="https://www.lasahighschool.org/" target="blank">LASA High School</a> in Austin, Texas. My mission is to use Computer Science as an application to unconventially solve problems found throughout different disciplines. 
+      <br> </p>
+     <p> Currently, I am a software developer at the <a href="https://thinkeryaustin.org/" target="blank"> Thinkery Children's Museum</a> where I collaborate with the Thinkery board to develop STEM applications for younger students. 
+      I also work as a research intern at the <a href="https://ellingtonlab.org/" target="blank"> Ellington  Lab</a> at UT Austin. 
+      <br> </p>
+      <p> In my free time, I enjoy learning on <a href="https://www.kaggle.com/" target="blank">Kaggle</a> and competing in different global machine learning challenges. My current interests lie in deep learning, neurosymbolic AI, and cycbersecurity encryption. Please feel free to contact me using the icons below!   </p>
+    </div>
 
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+  <div class="social-buttons">        
+     <!-- Mail Button -->
+            <a href="mailto:nobodiz123@gmail.com"  target="blank" class="social-margin">
+              <div class="social-icon envelope">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+            </a>           
+            <!-- LinkedIn Button -->
+            <a href="http://linkedin.com/in/noel-elias" class="social-margin" target="blank">
+              <div class="social-icon linkedin">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </div> 
+            </a>
+          <!-- Github Button -->
+            <a href="https://github.com/nobodiz123"  target="blank"  class="social-margin">
+              <div class="social-icon github">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+              </div>
+            </a>
+            <!-- Resume Button -->
+            <a href="http://youtube.com/" target="blank"  class="social-margin">
+              <div class="social-icon file">
+                <i class="fa fa-file" aria-hidden="true"></i>
+              </div> 
+            </a>    
+    </div>
+  </div>
+  <div class="introColumns myPicture">
+    <img src="/Users/nk-mac/Downloads/IMG_2276.JPG" alt="" />
+  </div>
+  </div>
 
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-
-                $(this).animate({'opacity':'1'},1500);
-
-            }
-
-        }); 
-
-    });
-
-});
-
-$("#banner").waypoint(function(){
-    $(this).fadeIn(750);
-},{
-    offset: 'bottom-in-view'
-});
-
-</script>
-
-	<style>
-		 body{ 
-		  background-image: url("https://github.com/nobodiz123/personal-website/blob/master/background.png?raw=true");
-		  background-size: cover;
-		 }
-
-	
-
-.fadein
-{
-    opacity:0;
-}
-
-		 		 
-	</style>
-	
-
-	<body class="is-preload">
-
-		<!-- Page Wrapper -->
-			<div id="bgimg-1 page-wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Home</a></h1>
-
-						<nav>
-							
-							<a href="#menu">Menu</a> 
-
-						</nav>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="projects.html">Projects</a></li>
-								<li><a href="#footer">Contact</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
-
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>Noel Elias</h2>
-							<p>High School Student + Encryption Enthusiast + Machine Learning Practitioner</p>
-								<br>
-								<br>
-								<br>
-							<br>
-							
-						</div>
-						
-					</section>
-
-				<!-- Wrapper -->
-					<section id="wrapper">
-
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div id = "first" class="inner fadein" >
-									<a class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/code-sign.png?raw=true" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Experienced Programmer</h2>
-										<p >Programming for 4 years. Created products with Python, SQL, Java, C++, HTML/CSS, C#, JavaScript, and MATLAB. Used Git, Unity, TensorFlow, Arduino, Android Studio, and Adobe Creative Suite. Developed multiple software applications.</p>
-									
-									</div>
-								</div>
-								
-							</section>
-
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div id = "second" class="inner" data-aos="fade" data-aos-duration="2000">
-									<a class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/microscope.png?raw=true" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Avid Researcher</h2>
-										<p>Researched for 3 years. Worked to implement computer science in molecular biology research at <a href="https://ellingtonlab.org/">UT Austin labs</a>. Presented and published findings at 2 conferences: <a href="https://igem.org/Main_Page">iGEM '18</a> and <a href="https://txsef.tamu.edu/">ISEF '20 science fairs.</a>  </p>
-									</div>
-								</div>
-								<script type="text/javascript">
-									$(document).ready(function () {
-										AOS.init();
-										AOS.refreshHard();  //optional
-									});
-								</script>
-							</section>
-
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div id = "third" class="inner" data-aos="fade" data-aos-duration="2000">
-									<a  class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/lightbulb.png?raw=true" alt="" /></a>
-									<div class="content">
-										<h2 class="major">STEM Volunteer</h2>
-										<p>Volunteered over 500+ hours. Developed augemented reality app that taught kids basics of programming. Taught multiple sessions at <a href="https://thinkeryaustin.org/">The Thinkery Children's Museum </a> & local schools - engaging over 50 kids daily. Served as STEM curriculum ambassador.</p>
-									</div>
-								</div>
-								<script type="text/javascript">
-									$(document).ready(function () {
-										AOS.init();
-										AOS.refreshHard();  //optional
-									});
-								</script>
-							</section>
-
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major"><a href="projects.html">Projects</a></h2>
-									<p>Here are some of my best projects. Check them out!</p>
-									<section class="features">
-										<article>
-											<a href="http://texascovid19.us-east-2.elasticbeanstalk.com/" class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/COVID_web_app.png?raw=true" alt="" /></a>
-											<h3 class="major">"Texas COVID-19 Projections"</h3>
-											<p> Programmed dynamic AWS web app using TensorFlow LSTM neural networks, Python web scrapers, and Dash to predict Texas COVID-19 data per county.<b> Validated with 93% accuracy. </b>
-											</p>
-											<a href="http://texascovid19.us-east-2.elasticbeanstalk.com/" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="https://www.youtube.com/watch?v=aqKqN5uav3I" class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/codex.png?raw=true" alt="" /></a>
-											<h3 class="major">Codex</h3>
-											<p>Coded, branded, marketed an augmented reality based app to teach young kids coding. Lauched permanently at multiple facilities with over <b>100 new daily users.</b></p>
-											<a href="https://www.youtube.com/watch?v=aqKqN5uav3I" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="https://3smedia.net/rackforms/output/forms/sfawdsecplcsch/absdetails.php?awd_ProjectIDSQL=129103" class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/research.png?raw=true" alt="" /></a>
-											<h3 class="major">"Fecal Contamination Assay"</h3>
-											<p>Led, publicized, engineered research  project for HF-183 contamination detection. Incorporated MATLAB scripts, math models, and LAMP analysis. <b>Beat EPA standard. </b> <a href="https://txsef.tamu.edu/"> TXSEF '20 </a> <b> Finalist </b>and <a href="http://www.sciencefest.org/"> Austin Energy Fair </a>- <b>1st</b></p>
-											<a href="https://3smedia.net/rackforms/output/forms/sfawdsecplcsch/absdetails.php?awd_ProjectIDSQL=129103" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="https://www.kaggle.com/noele123" class="image"><img src="https://github.com/nobodiz123/personal-website/blob/master/kaggle.png?raw=true" alt="" /></a>
-											<h3 class="major">Kaggle</h3>
-											<p> Machine learning and data science practitioner. Create predictive models using Python, SQL, Deep Learning, TensorFlow. Placed <b>50 out of 30,000</b> globally.</p>
-											<a href="https://www.kaggle.com/noele123" class="special">Learn more</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="projects.html" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</section>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Contact</h2>
-							<p>
-							Please contact me for collaborations or interships!</p>
-					
-						
-							<ul class="contact">
-								
-								<li class="icon solid fa-envelope"><a href="mailto:nobodiz123@gmail.com">nobodiz123@gmail.com</a></li>
-								<li class="icon brands fa-linkedin" ><a href="https://linkedin.com/in/noel-elias"> linkedin.com/in/noel-elias</a></li>
-								<li class="icon brands fa-github"><a href="https://github.com/nobodiz123"> github.com/nobodiz123</a></li>
-								
-						
-								</li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Noel Elias 2020. All rights reserved.</li>
-							</ul>	
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <div>
+      <h1 class="header1b"> Projects</h1>
+    </div>
+    
+    <div class="grid">
+      <div class="mediumItem" onclick="window.open('http://texascovid19.us-east-2.elasticbeanstalk.com/')" 
+      style="background-color:#D33E43; background-image: url('/Users/nk-mac/Downloads/graphs.png'); background-size: auto 60%; background-position: bottom center;" >  
+      <h5 class="gridHeader"> COVID-19 Dashboard </h5> <p class="gridText"> A neural network based web-app prediction model</p></div> 
+      
+      <div class="mediumItem" onclick="window.open('https://www.kaggle.com/noele123')" 
+      style="background-color:#1E212B; background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png'); background-size: auto 40%; background-position: bottom center;"> 
+      <h5 class="gridHeader"> Kaggle </h5> <p class="gridText"> Machine Learning competitor & Data Science contributor</p> </div> 
+      
+      <div class="largeItem" onclick="window.open('https://www.youtube.com/watch?v=aqKqN5uav3I')" 
+      style="background-color: #067BC2; background-image: url('/Users/nk-mac/Downloads/ar.png'); background-size: auto 75%; background-position: bottom right;"> 
+      <h5 class="gridHeader"> Codex </h5> <p class="gridText"> A revolutionary AR app to teach students coding</p> </div> 
+      
+      <div class="largeItem" 
+      style="background-color:#B1B6A6; background-image: url('/Users/nk-mac/Downloads/water_tap.png'); background-size: auto 50%; background-position: bottom center;" > 
+      <h5 class="gridHeader"> Molecular Fecal Contamination Assay  </h5> <p class="gridText"> 2020 State Finalist Science Fair Project - A LAMP-OSD <a href = "https://3smedia.net/rackforms/output/forms/sfawdsecplcsch/absdetails.php?awd_ProjectIDSQL=129103" target="_blank"> <b> <u> assay</u></b></a> paired with a cheaper material<a href = "https://www.youtube.com/watch?v=7HC5VsinAbI" target="_blank"> <b> <u> kit</u></b></a> to detect the HF-183 fecal gene  </p> </div> 
+      
+      <div class="largeItem" onclick="window.open('http://2018.igem.org/Team:Austin_LASA')" 
+      style="background-color:#006C67; background-image: url('https://igem.org/wiki/images/9/9c/IGEM_logo_2500x2500.png'); background-size: auto 85%; background-position: bottom center;"> 
+      <h5 class="gridHeader"> HIV Detection Kit for Infants </h5> <p class="gridText"> 2018 iGEM Conference Project - Bronze</p> </div> 
+      
+      <div class="mediumItem" onclick="window.open('https://doi.org/10.1038/s42003-020-01127-5')"  
+      style="background-color:#B1B6A6; background-image: url('/Users/nk-mac/Downloads/bacteria.png'); background-size: auto 60%; background-position: bottom right;"> 
+      <h5 class="gridHeader"> Optical Density Measurements in Bacterial Plates </h5>    </div> 
+     
+      <div class="mediumItem" onclick="window.open('https://drive.google.com/file/d/1ZooA-wznJv2IcYySToztu1cu0VGllf1L/view?usp=sharing')" 
+      style="background-color:#1E212B; background-image: url('/Users/nk-mac/Downloads/energy.png'); background-size: auto 55%; background-position: bottom right;"> 
+      <h5 class="gridHeader"> Organic Energy </h5> <p class="gridText"> A theoretical proposal to harvest and store sugar as a renewable energy source</p>  </div> 
+      
+      <div class="smallItem" onclick="window.open('https://github.com/nobodiz123/MATLAB')" 
+      style="background-color:#D33E43;"> 
+      <h5 class="gridHeader"> Yeast Showdown </h5> <p class="gridText"> My MATLAB solution to Harvard edX's QMB1 course challenge</p> </div> 
+      
+      <div class="smallItem" onclick="window.open('https://www.uscyberpatriot.org/Pages/Announcements/CyberPatriot-X-Competition-Timeline.aspx')" 
+      style="background-color:#006C67; background-image: url('https://alechoes.com/wp-content/uploads/2020/03/500_cyberemblem.png'); background-size: 50% 50%; background-position: bottom center;"> 
+      <h5 class="gridHeader"> Cyberpatriots </h5> <p class="gridText"> Qualified to 2018 nationals - Gold</p> </div> 
+      
+      <div class="smallItem" onclick="window.open('https://codingcompetitions.withgoogle.com/kickstart')" 
+      style="background-color:#1E212B;"> <h5 class="gridHeader"> Google Kickstarts </h5> <p class="gridText"> Competed in rounds A-E</p> </div> 
+      
+      <div class="smallItem" onclick="window.open('https://2017.picoctf.com/')" 
+      style="background-color:#067BC2; background-image: url('https://picoctf.org/img/logos/picoctf-logo-horizontal-white.svg'); background-size: 90% 70%; background-position: bottom center;"> 
+      <h5 class="gridHeader"> picoCTF </h5> <p class="gridText"> 2017-2018</p> </div> 
+  </div>
+</main>
 </html>
